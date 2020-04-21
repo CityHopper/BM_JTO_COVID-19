@@ -63,7 +63,7 @@ def scraper(maxpage, query, s_date, e_date): # 뉴스의 보도날짜, 헤드라
                     news_result.append(news_detail[2])
                     # pdate, pcompany, headline, content, link
                     f.write(
-                        "{}\t{}\t{}\t{}\t{}\n".format(news_detail[1], news_detail[4], news_detail[0], news_detail[2],news_detail[3]))
+                        "{}\t{}\t{}\t{}\n".format(news_detail[1], news_detail[4], news_detail[0], news_detail[2]))
 
             except Exception as e:
                 print(e)
@@ -125,8 +125,8 @@ def main():
     # query = input("검색어 입력: ")
     # s_date = input("시작날짜 입력(2019.01.01):")  # 2019.01.01
     # e_date = input("끝날짜 입력(2019.04.28):")  # 2019.04.28
-    # get_titles(maxpage, query, s_date, e_date)  # 검색된 네이버뉴스의 기사내용을 크롤링합니다.
+    # get_news(maxpage, query, s_date, e_date)  # 검색된 네이버뉴스의 기사내용을 크롤링합니다.
     scraper(maxpage, query, s_date, e_date)
-    make_wordcloud(100)
+    # make_wordcloud(100)
 
 main()
