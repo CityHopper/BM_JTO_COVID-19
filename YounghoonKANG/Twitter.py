@@ -4,10 +4,10 @@ from bs4 import BeautifulSoup
 import datetime
 
 ###################################
-yourquery = '치앙마이' # 검색어
-datefirst = "2020-03-03" # 데이터 수집 시작 날짜
-datelast = "2020-03-06" # 데이터 수집 끝 날짜, 수집에 포함 안됨
-wcnum = 30 # 워드클라우드 단어 개수
+yourquery = '제주시갑' # 검색어
+datefirst = "2020-04-10" # 데이터 수집 시작 날짜
+datelast = "2020-04-15" # 데이터 수집 끝 날짜, 수집에 포함 안됨
+wcnum = 100 # 워드클라우드 단어 개수
 ###################################
 
 days_range = []
