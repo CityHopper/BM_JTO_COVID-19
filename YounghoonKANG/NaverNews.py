@@ -23,7 +23,6 @@ def get_news(n_url):  # HTML parser로 타이틀, 날짜, 내용 저장
 
     _text = bsoup.select('#articleBodyContents')[0].get_text().replace('\n', " ")
     btext = _text.replace("// flash 오류를 우회하기 위한 함수 추가 function _flash_removeCallback() {}", "")
-    btext = re.sub('[▶]', '', btext)  # 기사 내용에서 특수문자 제거
     news_detail.append(btext.strip())
 
     news_detail.append(n_url)
