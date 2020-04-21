@@ -5,11 +5,11 @@ from collections import Counter
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 import pandas as pd
 
 
-def get_news(n_url): # HTML parser로 타이틀, 날짜, 내용 저장
+def get_news(n_url):  # HTML parser로 타이틀, 날짜, 내용 저장
     news_detail = []
 
     breq = requests.get(n_url)
@@ -23,7 +23,7 @@ def get_news(n_url): # HTML parser로 타이틀, 날짜, 내용 저장
 
     _text = bsoup.select('#articleBodyContents')[0].get_text().replace('\n', " ")
     btext = _text.replace("// flash 오류를 우회하기 위한 함수 추가 function _flash_removeCallback() {}", "")
-    btext = re.sub('[▶]', '', btext) # 기사 내용에서 특수문자 제거
+    btext = re.sub('[▶]', '', btext)  # 기사 내용에서 특수문자 제거
     news_detail.append(btext.strip())
 
     news_detail.append(n_url)
@@ -35,44 +35,47 @@ def get_news(n_url): # HTML parser로 타이틀, 날짜, 내용 저장
 
 
 news_result = []
-def scraper(maxpage, query, s_date, e_date): # 뉴스의 보도날짜, 헤드라인, 내용 등을 뽑고 메모장에 저장
+
+
+def scraper(maxpage, query, s_date, e_date, filename):  # 뉴스의 보도날짜, 헤드라인, 내용 등을 뽑고 메모장에 저장
     s_from = s_date.replace(".", "")
     e_to = e_date.replace(".", "")
     page = 1
     maxpage_t = (int(maxpage) - 1) * 10 + 1  # 11= 2페이지 21=3페이지 31=4페이지  ...81=9페이지 , 91=10페이지, 101=11페이지
-    f = open("./ScrapedData/news_scraped.txt", 'w', encoding='utf-8')
 
-    while page < maxpage_t:
-        print(page)
-        url = "https://search.naver.com/search.naver?where=news&query=" + query + "&sort=0&ds=" + s_date + "&de=" + e_date + "&nso=so%3Ar%2Cp%3Afrom" + s_from + "to" + e_to + "%2Ca%3A&start=" + str(
-            page)
+    with open(filename, 'a', encoding='utf-8') as f:
 
-        req = requests.get(url)
-        print(url)
-        cont = req.content
-        soup = BeautifulSoup(cont, 'html.parser')
-        # print(soup)
+        while page < maxpage_t:
+            print(page)
+            url = "https://search.naver.com/search.naver?where=news&query=" + query + "&sort=0&ds=" + s_date + "&de=" + e_date + "&nso=so%3Ar%2Cp%3Afrom" + s_from + "to" + e_to + "%2Ca%3A&start=" + str(
+                page)
 
-        for urls in soup.select("._sp_each_url"):
-            try:
-                # print(urls["href"])
-                if urls["href"].startswith("https://news.naver.com"):
+            req = requests.get(url)
+            print(url)
+            cont = req.content
+            soup = BeautifulSoup(cont, 'html.parser')
+            # print(soup)
+
+            for urls in soup.select("._sp_each_url"):
+                try:
                     # print(urls["href"])
-                    news_detail = get_news(urls["href"])
-                    news_result.append(news_detail[0])
-                    news_result.append(news_detail[2])
-                    # pdate, pcompany, headline, content, link
-                    f.write(
-                        "{}\t{}\t{}\t{}\t{}\n".format(news_detail[1], news_detail[4], news_detail[0], news_detail[2], news_detail[3]))
+                    if urls["href"].startswith("https://news.naver.com"):
+                        # print(urls["href"])
+                        news_detail = get_news(urls["href"])
+                        news_result.append(news_detail[0])
+                        news_result.append(news_detail[2])
+                        # pdate, pcompany, headline, content, link
+                        f.write("{}\t{}\t{}\t{}\t{}\n".format(news_detail[1], news_detail[4], news_detail[0],
+                                                              news_detail[2], news_detail[3]))
 
-            except Exception as e:
-                print(e)
-                continue
-        page += 10
-    f.close()
+                except Exception as e:
+                    print(e)
+                    continue
+
+            page += 10
 
 
-def make_wordcloud(word_count): # 뉴스 타이틀과 내용만 워드클라우딩
+def make_wordcloud(word_count):  # 뉴스 타이틀과 내용만 워드클라우딩
     twitter = Okt()
     sentences_tag = []
     # 형태소 분석하여 리스트에 넣기
@@ -97,7 +100,7 @@ def make_wordcloud(word_count): # 뉴스 타이틀과 내용만 워드클라우�
     for sentence1 in sentences_tag:
         for word, tag in sentence1:
             if tag in ['Noun', 'Adjective']:
-                if len(str(word)) >= 2: # 2음절 이상만 포함
+                if len(str(word)) >= 2:  # 2음절 이상만 포함
                     noun_adj_list.append(word)
 
     # 형태소별 count
@@ -117,16 +120,33 @@ def make_wordcloud(word_count): # 뉴스 타이틀과 내용만 워드클라우�
 
 
 def main():
-    maxpage = 2 # 네이버 뉴스 검색 특성상 최대 400 페이지까지만 제공
-    query = '코로나'
-    s_date = '2019.03.01'
-    e_date = '2020.03.31'
-    # maxpage = input("최대 출력할 페이지수 입력하시오: ")
-    # query = input("검색어 입력: ")
-    # s_date = input("시작날짜 입력(2019.01.01):")  # 2019.01.01
-    # e_date = input("끝날짜 입력(2019.04.28):")  # 2019.04.28
-    # get_news(maxpage, query, s_date, e_date)  # 검색된 네이버뉴스의 기사내용을 크롤링합니다.
-    scraper(maxpage, query, s_date, e_date)
-    # make_wordcloud(100)
+    maxpage = 2  # 네이버 뉴스 검색 특성상 최대 400 페이지까지만 제공
+    query = '메르스'
+
+    crawling_date = datetime(2020, 3, 1)  # 크롤링 시작일자
+    last_date = datetime(2020, 3, 31)  # 크롤링 종료일자
+    filename = "./ScrapedData/news_scraped_{}.txt".format(datetime.today().strftime("%Y%m%d_%H%M%S"))
+
+    while True:
+        print("이제 크롤링할 날짜 >> ", crawling_date.strftime("%Y.%m.%d"))
+
+        s_date = crawling_date.strftime("%Y.%m.%d")
+        e_date = s_date
+
+        # maxpage = input("최대 출력할 페이지수 입력하시오: ")
+        # query = input("검색어 입력: ")
+        # s_date = input("시작날짜 입력(2019.01.01):")  # 2019.01.01
+        # e_date = input("끝날짜 입력(2019.04.28):")  # 2019.04.28
+        # get_news(maxpage, query, s_date, e_date)  # 검색된 네이버뉴스의 기사내용을 크롤링합니다.
+        scraper(maxpage, query, s_date, e_date, filename)
+        # make_wordcloud(100)
+
+        # 다음 크롤링 할 날짜 계산
+        crawling_date = crawling_date + timedelta(days=1)
+
+        # 다음 크롤링 날짜가 마지막 날짜보다 이후이면 종료
+        if crawling_date > last_date:
+            break
+
 
 main()
