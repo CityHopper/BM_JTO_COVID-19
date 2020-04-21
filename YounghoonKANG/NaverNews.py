@@ -40,7 +40,7 @@ def scraper(maxpage, query, s_date, e_date): # 뉴스의 보도날짜, 헤드라
     e_to = e_date.replace(".", "")
     page = 1
     maxpage_t = (int(maxpage) - 1) * 10 + 1  # 11= 2페이지 21=3페이지 31=4페이지  ...81=9페이지 , 91=10페이지, 101=11페이지
-    f = open("./news_scraped.txt", 'w', encoding='utf-8')
+    f = open("./ScrapedData/news_scraped.txt", 'w', encoding='utf-8')
 
     while page < maxpage_t:
         print(page)
@@ -63,7 +63,7 @@ def scraper(maxpage, query, s_date, e_date): # 뉴스의 보도날짜, 헤드라
                     news_result.append(news_detail[2])
                     # pdate, pcompany, headline, content, link
                     f.write(
-                        "{}\t{}\t{}\t{}\n".format(news_detail[1], news_detail[4], news_detail[0], news_detail[2]))
+                        "{}\t{}\t{}\t{}\t{}\n".format(news_detail[1], news_detail[4], news_detail[0], news_detail[2], news_detail[3]))
 
             except Exception as e:
                 print(e)
@@ -117,10 +117,10 @@ def make_wordcloud(word_count): # 뉴스 타이틀과 내용만 워드클라우�
 
 
 def main():
-    maxpage = 3
+    maxpage = 2 # 네이버 뉴스 검색 특성상 최대 400 페이지까지만 제공
     query = '코로나'
-    s_date = '2019.03.06'
-    e_date = '2020.03.06'
+    s_date = '2019.03.01'
+    e_date = '2020.03.31'
     # maxpage = input("최대 출력할 페이지수 입력하시오: ")
     # query = input("검색어 입력: ")
     # s_date = input("시작날짜 입력(2019.01.01):")  # 2019.01.01
