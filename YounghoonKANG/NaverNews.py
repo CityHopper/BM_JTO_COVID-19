@@ -119,12 +119,12 @@ def make_wordcloud(word_count):  # 뉴스 타이틀과 내용만 워드클라우
 
 
 def main():
-    maxpage = 2  # 네이버 뉴스 검색 특성상 최대 400 페이지까지만 제공
-    query = '메르스'
+    maxpage = 100  # 네이버 뉴스 검색 특성상 최대 400 페이지까지만 제공
+    query = '코로나'
 
-    crawling_date = datetime(2020, 3, 1)  # 크롤링 시작일자
+    crawling_date = datetime(2020, 1, 1)  # 크롤링 시작일자
     last_date = datetime(2020, 3, 31)  # 크롤링 종료일자
-    filename = "./ScrapedData/news_scraped_{}.txt".format(datetime.today().strftime("%Y%m%d_%H%M%S"))
+    filename = "./ScrapedData/news_scraped_{}_{}.txt".format(query, datetime.today().strftime("%Y%m%d_%H%M%S"))
 
     while True:
         print("이제 크롤링할 날짜 >> ", crawling_date.strftime("%Y.%m.%d"))
