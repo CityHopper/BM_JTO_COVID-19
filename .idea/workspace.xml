@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116d3ebb-e5b4-4bb4-95c5-9ecfb5f7d4b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BM_JTO_Coronavirus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BM_JTO_Coronavirus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaverNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaverNews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaverNewsComment.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaverNewsComment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Twitter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraped_twitter_words_치앙마이_2020-03-03_to_2020-03-05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testpad.py" beforeDir="false" afterPath="$PROJECT_DIR$/testpad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YounghoonKANG/.idea/BM_JTO_Coronavirus.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YounghoonKANG/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YounghoonKANG/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YounghoonKANG/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YounghoonKANG/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YounghoonKANG/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
