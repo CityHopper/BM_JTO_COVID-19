@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="116d3ebb-e5b4-4bb4-95c5-9ecfb5f7d4b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YounghoonKANG/NaverNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/YounghoonKANG/NaverNews.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Python.NaverNews">
     <configuration name="NaverNews" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -166,22 +165,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586066245212" />
-    <state width="1899" height="202" key="GridCell.Tab.0.bottom" timestamp="1587479387557">
+    <state width="1899" height="409" key="GridCell.Tab.0.bottom" timestamp="1587525588523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587479387557" />
-    <state width="1899" height="202" key="GridCell.Tab.0.center" timestamp="1587479387557">
+    <state width="1899" height="409" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587525588523" />
+    <state width="1899" height="409" key="GridCell.Tab.0.center" timestamp="1587525588523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587479387557" />
-    <state width="1899" height="202" key="GridCell.Tab.0.left" timestamp="1587479387557">
+    <state width="1899" height="409" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587525588523" />
+    <state width="1899" height="409" key="GridCell.Tab.0.left" timestamp="1587525588523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587479387557" />
-    <state width="1899" height="202" key="GridCell.Tab.0.right" timestamp="1587479387557">
+    <state width="1899" height="409" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587525588523" />
+    <state width="1899" height="409" key="GridCell.Tab.0.right" timestamp="1587525588523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587479387557" />
+    <state width="1899" height="409" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587525588523" />
     <state width="1899" height="245" key="GridCell.Tab.1.bottom" timestamp="1586362555884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -198,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="245" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586362555884" />
-    <state x="689" y="123" key="SettingsEditor" timestamp="1586420227766">
+    <state x="689" y="123" key="SettingsEditor" timestamp="1587523567539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="123" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586420227766" />
+    <state x="689" y="123" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587523567539" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586115519473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
