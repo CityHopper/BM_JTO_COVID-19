@@ -53,7 +53,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NaverNews1.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="NaverNews0.9" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BM_JTO_Coronavirus" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,7 +65,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/YounghoonKANG/NaverNews1.1.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\CPBGame001\Documents\GitHub\BM_JTO_Coronavirus\YounghoonKANG\NaverNews0.9.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +140,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.NaverNews" />
-        <item itemvalue="Python.NaverNews1.1" />
+        <item itemvalue="Python.NaverNews0.9" />
         <item itemvalue="Python.NaverNews2.0 (1)" />
         <item itemvalue="Python.NaverNews2.0" />
         <item itemvalue="Python.testpad" />
@@ -161,10 +161,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586066245212">
+    <state x="444" y="243" key="FileChooserDialogImpl" timestamp="1587559944262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586066245212" />
+    <state x="444" y="243" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587559944262" />
     <state width="1899" height="277" key="GridCell.Tab.0.bottom" timestamp="1587547900552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="245" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586362555884" />
-    <state x="689" y="123" key="SettingsEditor" timestamp="1587523567539">
+    <state x="689" y="123" key="SettingsEditor" timestamp="1587559945985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="123" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587523567539" />
+    <state x="689" y="123" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587559945985" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586115519473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
