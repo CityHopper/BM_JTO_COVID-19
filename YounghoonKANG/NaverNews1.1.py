@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import requests
 from konlpy.tag import Okt
 from collections import Counter
 from wordcloud import WordCloud
@@ -7,6 +6,9 @@ import matplotlib.pyplot as plt
 import re
 from datetime import datetime, timedelta
 import pandas as pd
+import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 
 
 def get_news(n_url):  # HTML parser로 타이틀, 날짜, 내용 저장
@@ -122,7 +124,7 @@ def main():
     maxpage = 100  # 네이버 뉴스 검색 특성상 최대 400 페이지까지만 제공
     query = '코로나'
 
-    crawling_date = datetime(2020, 3, 1)  # 크롤링 시작일자
+    crawling_date = datetime(2020, 3, 14)  # 크롤링 시작일자
     last_date = datetime(2020, 3, 31)  # 크롤링 종료일자
     filename = "./ScrapedData/news_scraped_{}_{}.txt".format(query, datetime.today().strftime("%Y%m%d_%H%M%S"))
 
