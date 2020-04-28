@@ -29,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.NaverNews">
     <configuration name="NaverNews" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -165,22 +165,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="444" y="243" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587564624211" />
-    <state width="1287" height="209" key="GridCell.Tab.0.bottom" timestamp="1587636706314">
+    <state width="1287" height="209" key="GridCell.Tab.0.bottom" timestamp="1587671130079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587636706314" />
-    <state width="1287" height="209" key="GridCell.Tab.0.center" timestamp="1587636706314">
+    <state width="1287" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587671130079" />
+    <state width="1287" height="209" key="GridCell.Tab.0.center" timestamp="1587671130079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="209" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587636706314" />
-    <state width="1287" height="209" key="GridCell.Tab.0.left" timestamp="1587636706313">
+    <state width="1287" height="209" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587671130079" />
+    <state width="1287" height="209" key="GridCell.Tab.0.left" timestamp="1587671130079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="209" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587636706313" />
-    <state width="1287" height="209" key="GridCell.Tab.0.right" timestamp="1587636706314">
+    <state width="1287" height="209" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587671130079" />
+    <state width="1287" height="209" key="GridCell.Tab.0.right" timestamp="1587671130079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="209" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587636706314" />
+    <state width="1287" height="209" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587671130079" />
     <state width="1899" height="245" key="GridCell.Tab.1.bottom" timestamp="1586362555884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,18 +197,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="245" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586362555884" />
-    <state x="689" y="123" key="SettingsEditor" timestamp="1587564626336">
+    <state x="689" y="123" key="SettingsEditor" timestamp="1587985699301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="123" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587564626336" />
+    <state x="689" y="123" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587985699301" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586115519473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586115519473" />
-    <state x="657" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587558393520">
+    <state x="657" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588036310345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="657" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587558393520" />
+    <state x="657" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588036310345" />
+    <state x="657" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587982956443" />
     <state x="573" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586781561158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
